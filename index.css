@@ -1,0 +1,76 @@
+body{
+    font-family: 'arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header{
+    background-color: #3b5998;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+h1{
+    margin: 0;
+}
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+/*i am styling search section*/
+.search-section {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+#search-form input,
+#search-form select,
+#search-form button {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+#search-form button{
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+#search-form button:hover{
+    background-color: #354d8e;
+}
+/*i am styling results section*/
+
+.results-section{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.result-item{
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.result-item:last-child{
+    border-bottom: none;
+}
+.result-item h3{
+    margin: 0;
+    color: #3b5998;
+}
+.result-item p{
+    margin: 5px 0 0;
+    color: #666;
+}
