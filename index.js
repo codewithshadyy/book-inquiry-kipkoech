@@ -26,10 +26,17 @@ const books = [
     }
 ];
 
+
+// Th e search functionality
+
 document.getElementById('search-form').addEventListener('submit', function (e) {
     e.preventDefault();
+
+    // collect the necessary values for the  search objects
     const query = document.getElementById('search-query').value.toLowerCase();
     const theme = document.getElementById('book-theme').value;
+
+    // filter the books by author's name, title or by theme
     const filteredBooks = books.filter(book => {
         const matchesQuery = book.title.toLowerCase().includes(query) || book.author.toLowerCase().includes(query);
         const matchesTheme = theme === 'all' || book.theme === theme;
@@ -37,7 +44,7 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
     });
     displayResults(filteredBooks);
 });
-
+// displaying the books via the dom
 function displayResults(books) {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = '';
